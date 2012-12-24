@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ ! -e svnroot ]
+then
+	svnadmin create svnroot
+	echo -e '#!/bin/sh\necho 0;\n' > svnroot/hooks/pre-revprop-change && chmod 755 svnroot/hooks/pre-revprop-change
+svnsync init file://$PWD/svnroot http://svn.wikimedia.org/svnroot/pywikipedia
+fi
+svnsync sync file://$PWD/svnroot
