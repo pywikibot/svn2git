@@ -1,0 +1,3 @@
+#!/bin/bash
+
+../svn-all-fast-export $@ --identity-map=authors.alias --rules=pwb.rules --add-metadata-notes --svn-branches $HOME/svnroot/pywikipedia

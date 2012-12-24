@@ -5,3 +5,4 @@ Makefile
 svn-all-fast-export
 src/local-config.pri
 *.so
+*.old
