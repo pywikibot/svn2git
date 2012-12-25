@@ -2,7 +2,13 @@
 if [ ! -e svnroot ]
 then
 	svnadmin create svnroot
-	echo -e '#!/bin/sh\necho 0;\n' > svnroot/hooks/pre-revprop-change && chmod 755 svnroot/hooks/pre-revprop-change
-svnsync init file://$PWD/svnroot http://svn.wikimedia.org/svnroot/pywikipedia
+	echo Downloading svnroot package...
+	rm -f svnroot.tar.bz2
+	sh svnroot_wget
+	echo Unpacking...
+	tar -xvjf svnroot.tar.bz2 | grep -v '\/.*\/.*\/'
+	#echo -e '#!/bin/sh\necho 0;\n' > svnroot/hooks/pre-revprop-change && chmod 755 svnroot/hooks/pre-revprop-change
+	#svnsync init file://$PWD/svnroot http://svn.wikimedia.org/svnroot/pywikipedia
 fi
+echo Syncing latest changes...
 svnsync sync file://$PWD/svnroot

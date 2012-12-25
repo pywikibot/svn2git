@@ -1,0 +1,1 @@
+tar --exclude="locks" --exclude="db/*lock" -cvjf svnroot.tar.bz2 svnroot
