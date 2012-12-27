@@ -1,8 +1,8 @@
-create repository pywikipedia/pywikiparser
+create repository output/pywikiparser
 end repository
 
 match /trunk/pywikiparser/
-  repository pywikipedia/pywikiparser
+  repository output/pywikiparser
   branch master
   min revision 3914
 end match

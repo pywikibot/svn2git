@@ -1,13 +1,13 @@
-create repository pywikipedia/pywikipedia
+create repository output/pywikipedia
 end repository
 
 match /trunk/pywikipedia/
-  repository pywikipedia/pywikipedia
+  repository output/pywikipedia
   branch master
 end match
 
 match /branches/rewrite/
-  repository pywikipedia/pywikipedia
+  repository output/pywikipedia
   branch rewrite
 end match
 

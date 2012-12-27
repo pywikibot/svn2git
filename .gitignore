@@ -1,5 +1,6 @@
 *.py[cod]
-Makefile
+/Makefile
+/src/Makefile
 *~
 *.o
 svn-all-fast-export
