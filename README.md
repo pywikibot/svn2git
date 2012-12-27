@@ -8,8 +8,21 @@ with modifications and scripts by Chad Horohoe.
 
 [1] https://gerrit.wikimedia.org/r/gitweb?p=operations/software.git
 
+Requirements
+------------
+ * working c++ compiler
+ * libsvn-dev
+ * libqt-dev (?)
+ * 
+
 Building
 --------
+``` bash
+# build svn2git
 qmake
 make
-scripts/...
+
+# 
+cd scripts-pwb
+make # or make output/pywikiparser, make output/pywikipedia, etc.
+```
