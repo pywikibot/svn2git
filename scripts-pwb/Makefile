@@ -7,8 +7,14 @@ all:
 svnroot:
 	./sync
 
-output/pywikiparser:
-	../svn-all-fast-export $(OPTS) --rules=parser.rules $(SVNROOT)
+export:
+	../svn-all-fast-export $(OPTS) --rules=total.rules $(SVNROOT)
 
-output/pywikipedia:
-	../svn-all-fast-export $(OPTS) --rules=pwb.rules $(SVNROOT)
+push:
+	cd output/core && git remote add origin https://github.com/pywikibot/core.git && git push -u -f origin master
+	cd output/i18n && git remote add origin https://github.com/pywikibot/i18n.git && git push -u -f origin master
+	cd output/compat && git remote add origin https://github.com/pywikibot/compat.git && git push -u -f origin master
+	cd output/spelling && git remote add origin https://github.com/pywikibot/spelling.git && git push -u -f origin master
+
+clean:
+	rm -rf output/*

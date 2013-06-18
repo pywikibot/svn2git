@@ -1,0 +1,42 @@
+create repository output/core
+end repository
+
+create repository output/compat
+end repository
+
+create repository output/i18n
+end repository
+
+create repository output/spelling
+end repository
+
+match /trunk/pywikipedia/spelling/
+  min revision 1540
+  max revision 3904
+  repository output/spelling
+  branch master
+end match
+
+match /trunk/spelling/
+  min revision 3904
+  repository output/spelling
+  branch master
+end match
+
+match /branches/rewrite/scripts/i18n/
+  repository output/i18n
+  branch master
+end match
+
+match /branches/rewrite/
+  repository output/core
+  branch master
+end match
+
+match /trunk/pywikipedia/
+  repository output/compat
+  branch master
+end match
+
+match .*
+end match

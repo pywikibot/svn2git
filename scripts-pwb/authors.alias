@@ -1,0 +1,405 @@
+(no author) cvs2svn conversion script <noc@wikimedia.org>
+80686 Manuel Schneider <80686@users.mediawiki.org>
+a_engels Andre Engels <a_engels@users.mediawiki.org>
+aaron Aaron Schulz <aaron@users.mediawiki.org>
+abernala Alberto Bernal <abernala@users.mediawiki.org>
+abigor Huib Laurens <abigor@users.mediawiki.org>
+aboostani Arash Boostani <aboostani@users.mediawiki.org>
+adam Adam Miller <adam@users.mediawiki.org>
+adammck Adam Mckaig <adammck@users.mediawiki.org>
+adhair Austin Hair <adhair@users.mediawiki.org>
+aigerim Aigerim Karabekova <aigerim@users.mediawiki.org>
+aj Andreas Jonsson <aj@users.mediawiki.org>
+ajvol Alexander Sigachov <ajvol@users.mediawiki.org>
+akshay Akshay Agarwal <akshay@users.mediawiki.org>
+alexsh Alex Shih-Han Lin <alexsh@users.mediawiki.org>
+allyunion Jason Y. Lee <allyunion@users.mediawiki.org>
+alnokta Mohamed Magdy <alnokta@users.mediawiki.org>
+amidaniel Daniel Cannon <amidaniel@users.mediawiki.org>
+amir Amir Sarabadani <amir@users.mediawiki.org>
+amire80 Amir E. Aharoni <amire80@users.mediawiki.org>
+angelab Angela Beesley Starling <angelab@users.mediawiki.org>
+ankitgarg833 Ankit Garg <ankitgarg833@users.mediawiki.org>
+aoineko_jp Guillaume Blanchard <aoineko_jp@users.mediawiki.org>
+ariel Ariel Glenn <ariel@users.mediawiki.org>
+asher Asher Feldman <asher@users.mediawiki.org>
+ashley Jack Phoenix <ashley@users.mediawiki.org>
+aude Katie Filbert <aude@users.mediawiki.org>
+avar Ævar Arnfjörð Bjarmason <avar@users.mediawiki.org>
+awjrichards Arthur Richards <awjrichards@users.mediawiki.org>
+axelboldt Axel Boldt <axelboldt@users.mediawiki.org>
+b_stancescu Bogdan Stancescu <b_stancescu@users.mediawiki.org>
+bachsau Sven Heinemann <bachsau@users.mediawiki.org>
+bawolff Brian Wolff <bawolff@users.mediawiki.org>
+bartek Bartek Łapiński <bartek@users.mediawiki.org>
+beckr Christian Becker <beckr@users.mediawiki.org>
+ben Ben Hartshorne <ben@users.mediawiki.org>
+bhagya Bhagya Gunaratne <bhagya@users.mediawiki.org>
+bharris Brandon Harris <bharris@users.mediawiki.org>
+bigsmoke Rowan Rodrik van der Molen <bigsmoke@users.mediawiki.org>
+bkaempgen Benedikt Kämpgen <bkaempgen@users.mediawiki.org>
+blobaugh Ben Lobaugh <blobaugh@users.mediawiki.org>
+bradneuberg Brad Neuberg <bradneuberg@users.mediawiki.org>
+brezelben Ben Romberg <brezelben@users.mediawiki.org>
+brion Brion Vibber <brion@users.mediawiki.org>
+vibber Brion Vibber <brion@users.mediawiki.org>
+bsitu Benny Situ <bsitu@users.mediawiki.org>
+btongminh Bryan Tong Minh <btongminh@users.mediawiki.org>
+catrope Roan Kattouw <catrope@users.mediawiki.org>
+cdangerville Cyril Dangerville <cdangerville@users.mediawiki.org>
+cervidae Tim Weyer <cervidae@users.mediawiki.org>
+charlie Charles Melbye <charlie@users.mediawiki.org>
+chrisseaton Chris Seaton <chrisseaton@users.mediawiki.org>
+christianlist Christian List <christianlist@users.mediawiki.org>
+churchofemacs Tobias <churchofemacs@users.mediawiki.org>
+ckepper Christoph Kepper <ckepper@users.mediawiki.org>
+cobi Jacobi Carter <cobi@users.mediawiki.org>
+cogden Chris Ogden <cogden@users.mediawiki.org>
+collinj Jimmy Collins <collinj@users.mediawiki.org>
+conrad Conrad Irwin <conrad@users.mediawiki.org>
+cosoleto Francesco Cosoleto <cosoleto@users.mediawiki.org>
+cryptocoryne Alexander K. <cryptocoryne@users.mediawiki.org>
+cydeweys Cyde Weys <cydeweys@users.mediawiki.org>
+dale Michael Dale <dale@users.mediawiki.org>
+danenberg Peter Danenberg <danenberg@users.mediawiki.org>
+daniel Daniel Kinzler <daniel@users.mediawiki.org>
+danny_b Danny B. <danny_b@users.mediawiki.org>
+dantman Daniel Friesen <dantman@users.mediawiki.org>
+dasch Daniel Schuba <dasch@users.mediawiki.org>
+david David McCabe <david@users.mediawiki.org>
+demon Chad Horohoe <demon@users.mediawiki.org>
+devayon Devayon Das <devayon@users.mediawiki.org>
+devunt Bae June Hyeon <devunt@users.mediawiki.org>
+dfinzer Devin Finzer <dfinzer@users.mediawiki.org>
+diana Diana M. Dupuis <diana@users.mediawiki.org>
+diebuche Leo Koppelkamm <diebuche@users.mediawiki.org>
+diederik Diederik van Liere <diederik@users.mediawiki.org>
+downchuck Charles Pritchard <downchuck@users.mediawiki.org>
+dschwen Daniel Schwen <dschwen@users.mediawiki.org>
+e23 Mr. E23 <e23@users.mediawiki.org>
+eflebeth Elisabeth Bauer <eflebeth@users.mediawiki.org>
+egilk Egil Kvaleberg <egilk@users.mediawiki.org>
+eloy Krzysztof Krzyzaniak <eloy@users.mediawiki.org>
+emil Emil Podlaszewski <emil@users.mediawiki.org>
+emiller Evan Miller <emiller@users.mediawiki.org>
+emufarmers Benjamin Lees <emufarmers@users.mediawiki.org>
+erik Erik Moeller <erik@users.mediawiki.org>
+eloquence Erik Moeller <erik@users.mediawiki.org>
+erwin85 Erwin <erwin85@users.mediawiki.org>
+evan Evan Prodromou <evan@users.mediawiki.org>
+evanprodromou Evan Prodromou <evanprodromou@users.mediawiki.org>
+ezachte Erik Zachte <ezachte@users.mediawiki.org>
+fabianh Fabian Howahl <fabianh@users.mediawiki.org>
+faurethomas Thomas Fauré <faurethomas@users.mediawiki.org>
+fde Frank Dengler <fde@users.mediawiki.org>
+fenzik Fenzik Joseph <fenzik@users.mediawiki.org>
+filnik Filnik <filnik@users.mediawiki.org>
+flohack Florian Hackenberger <flohack@users.mediawiki.org>
+foxtrott Stephan Gambke <foxtrott@users.mediawiki.org>
+fptc Tobias Beck <fptc@users.mediawiki.org>
+freakolowsky Jure Kajzer <freakolowsky@users.mediawiki.org>
+fredck Frederico Caldeira Knabben <fredck@users.mediawiki.org>
+fvassard Fred Vassard <fvassard@users.mediawiki.org>
+gbruin Garrett Brown <gbruin@users.mediawiki.org>
+gerardm Gerard Meijssen <gerardm@users.mediawiki.org>
+gerrit Gerrit Holl <gerrit@users.mediawiki.org>
+gigs Jason Giglio <gigs@users.mediawiki.org>
+giovanni Giovanni Luca Ciampaglia <giovanni@users.mediawiki.org>
+gmaxwell Greg Maxwell <gmaxwell@users.mediawiki.org>
+gpaumier Guillaume Paumier <gpaumier@users.mediawiki.org>
+grace Grace Pastorelly Ruiz <grace@users.mediawiki.org>
+greenreaper Laurence Parry <greenreaper@users.mediawiki.org>
+greg Greg Sabino Mullane <greg@users.mediawiki.org>
+gregchiasson Greg Chiasson <gregchiasson@users.mediawiki.org>
+gri6507 Paul Grinberg <gri6507@users.mediawiki.org>
+grondin Bertrand Grondin <grondin@users.mediawiki.org>
+gszorc Gregory Szorc <gszorc@users.mediawiki.org>
+gurch Matthew Britton <gurch@users.mediawiki.org>
+guyvdb Guy Van den Broeck <guyvdb@users.mediawiki.org>
+gwicke Gabriel Wicke <gwicke@users.mediawiki.org>
+gabrielwicke Gabriel Wicke <gwicke@users.mediawiki.org>
+halfak Aaron Halfaker <halfak@users.mediawiki.org>
+happy-melon Happy-melon <happy-melon@users.mediawiki.org>
+happydog Mark Clements <happydog@users.mediawiki.org>
+harddisk Marco Schuster <harddisk@users.mediawiki.org>
+hartman Derk-Jan Hartman <hartman@users.mediawiki.org>
+hashar Antoine Musso <hashar@users.mediawiki.org>
+hcatlin Hampton Catlin <hcatlin@users.mediawiki.org>
+hhappel Hans-Joerg Happel <hhappel@users.mediawiki.org>
+hidders Jan Hidders <hidders@users.mediawiki.org>
+holek Mike Połtyn <holek@users.mediawiki.org>
+hooft Rob W.W. Hooft <hooft@users.mediawiki.org>
+huji Huji <huji@users.mediawiki.org>
+husky Hay Kranen <husky@users.mediawiki.org>
+ialex Alexandre Emsenhuber <ialex@users.mediawiki.org>
+ilabarg1 Iker Labarga <ilabarg1@users.mediawiki.org>
+ilyah Ilya Haykinson <ilyah@users.mediawiki.org>
+imsop Rowan Collins <imsop@users.mediawiki.org>
+inez Inez Korczynski <inez@users.mediawiki.org>
+ipye Ian Pye <ipye@users.mediawiki.org>
+ishidaJ Noriyuki Ishida <ishidaJ@users.mediawiki.org>
+ishimatsu Masanobu Ishimatsu <ishimatsu@users.mediawiki.org>
+ivanlanin Ivan Lanin <ivanlanin@users.mediawiki.org>
+j Jan Gerber <j@users.mediawiki.org>
+jablko Jack Bates <jablko@users.mediawiki.org>
+jacquesroy7 Jacques Roy <jacquesroy7@users.mediawiki.org>
+jamesur James Alexander <jamesur@users.mediawiki.org>
+jan Jan Luca Naumann <jan@users.mediawiki.org>
+janpaul123 Jan Paul Posma <janpaul123@users.mediawiki.org>
+jasonr Jason Richey <jasonr@users.mediawiki.org>
+jayvdb John Vandenberg <jayvdb@users.mediawiki.org>
+jdpond Jack D. Pond <jdpond@users.mediawiki.org>
+jeblad John Erling Blad <jeblad@users.mediawiki.org>
+jeluf Jens Frank <jeluf@users.mediawiki.org>
+jeroendedauw Jeroen De Dauw <jeroendedauw@users.mediawiki.org>
+jeronim Jerome Jamnicky <jeronim@users.mediawiki.org>
+jhb Joerg Baach <jhb@users.mediawiki.org>
+jhsoby Jon Harald Søby <jhsoby@users.mediawiki.org>
+jimbojw Jim R. Wilson <jimbojw@users.mediawiki.org>
+jitseniesen Jitse Niesen <jitseniesen@users.mediawiki.org>
+jlemley Jeremy Lemley <jlemley@users.mediawiki.org>
+jnatividad Joel Natividad <jnatividad@users.mediawiki.org>
+johnduhart John Du Hart <johnduhart@users.mediawiki.org>
+jojo Johannes Beigel <jojo@users.mediawiki.org>
+jonwilliford Jonathan Williford <jonwilliford@users.mediawiki.org>
+jostrow Julian Ostrow <jostrow@users.mediawiki.org>
+jpostlethwaite Jeremy Postlethwaite <jpostlethwaite@users.mediawiki.org>
+jprilusky Jaime Prilusky <jprilusky@users.mediawiki.org>
+juliano Juliano F. Ravasi <juliano@users.mediawiki.org>
+junaidpv Junaid P V <junaidpv@users.mediawiki.org>
+jvelezv Jesus Velez <jvelezv@users.mediawiki.org>
+kaldari Ryan Kaldari <kaldari@users.mediawiki.org>
+karstenuil Karsten Uil <karstenuil@users.mediawiki.org>
+kbrown Kevin Brown <kbrown@users.mediawiki.org>
+kelson42 Emmanuel Engelhart <kelson42@users.mediawiki.org>
+khorn Katie Horn <khorn@users.mediawiki.org>
+kim Kim Bruning <kim@users.mediawiki.org>
+kipcool Kip <kipcool@users.mediawiki.org>
+knutux Andrius R. <knutux@users.mediawiki.org>
+krimpet Fran Rogers <krimpet@users.mediawiki.org>
+krinkle Krinkle <krinkle@users.mediawiki.org>
+ktchan Kwan Ting Chan <ktchan@users.mediawiki.org>
+kwisatz David Raison <kwisatz@users.mediawiki.org>
+laner Ryan Lane <laner@users.mediawiki.org>
+lcawte Lewis Cawte <lcawte@users.mediawiki.org>
+lcrocker Lee Daniel Crocker <lcrocker@users.mediawiki.org>
+uid23179 Lee Daniel Crocker <uid23179@users.mediawiki.org>
+leogregianin Leonardo Gregianin <leogregianin@users.mediawiki.org>
+leon Leon Weber <leon@users.mediawiki.org>
+leonsp Leons Petrazickis <leonsp@users.mediawiki.org>
+lhridley Lisa Ridley <lhridley@users.mediawiki.org>
+liangent Liangent <liangent@users.mediawiki.org>
+looxix Luc Van Oostenryck <looxix@users.mediawiki.org>
+lrbabe Louis-Rémi Babe <lrbabe@users.mediawiki.org>
+luca Luca de Alfaro <luca@users.mediawiki.org>
+lupin Lupin <lupin@users.mediawiki.org>
+lupin-wp Lupin <lupin-wp@users.mediawiki.org>
+maarten Maarten van Hoof <maarten@users.mediawiki.org>
+macbre Maciej Brencz <macbre@users.mediawiki.org>
+magnusmanske Magnus Manske <magnusmanske@users.mediawiki.org>
+magnus_manske Magnus Manske <magnusmanske@users.mediawiki.org>
+mah Mark A. Hershberger <mah@users.mediawiki.org>
+maikmerten Maik Merten <maikmerten@users.mediawiki.org>
+malafaya André Malafaya Baptista <malafaya@users.mediawiki.org>
+malvineous Adam Nielsen <malvineous@users.mediawiki.org>
+mark Mark Bergsma <mark@users.mediawiki.org>
+Mark Bergsma Mark Bergsma <mark@users.mediawiki.org>
+markbergsma Mark Bergsma <mark@users.mediawiki.org>
+markcdeckert Mark Deckert <markcdeckert@users.mediawiki.org>
+markj Mark Jaroski <markj@users.mediawiki.org>
+marooned Marooned <marooned@users.mediawiki.org>
+marumari April King <marumari@users.mediawiki.org>
+matjordan Matthias Jordan <matjordan@users.mediawiki.org>
+matsuno Jun Matsuno <matsuno@users.mediawiki.org>
+matthew.ja Matthew April <matthew.ja@users.mediawiki.org>
+mattj Matt Johnston <mattj@users.mediawiki.org>
+maxsem Max Semenik <maxsem@users.mediawiki.org>
+mej Mark Johnston <mej@users.mediawiki.org>
+mfarag Meno25 <mfarag@users.mediawiki.org>
+mglaser Markus Glaser <mglaser@users.mediawiki.org>
+mgrabovsky Matěj Grabovský <mgrabovsky@users.mediawiki.org>
+midom Domas Mituzas <midom@users.mediawiki.org>
+mikaellindmark Mikael Lindmark <mikaellindmark@users.mediawiki.org>
+mikeb Mike Baynton <mikeb@users.mediawiki.org>
+millosh Milos Rancic <millosh@users.mediawiki.org>
+misza13 Misza13 <misza13@users.mediawiki.org>
+mkroetzsch Markus Krötzsch <mkroetzsch@users.mediawiki.org>
+mrzman Alex Z. <mrzman@users.mediawiki.org>
+mulligen Erik van Mulligen <mulligen@users.mediawiki.org>
+multichill Maarten Dammers <multichill@users.mediawiki.org>
+nad Aran Dunkley <nad@users.mediawiki.org>
+nadeesha nadeesha <nadeesha@users.mediawiki.org>
+nagelp Patrick Nagel <nagelp@users.mediawiki.org>
+neilk Neil Kandalgaonkar <neilk@users.mediawiki.org>
+nelson Russ Nelson <nelson@users.mediawiki.org>
+nephele Nephele <nephele@users.mediawiki.org>
+nhuffschmid Norbert Huffschmid <nhuffschmid@users.mediawiki.org>
+nicdumz Nicolas Dumazet <nicdumz@users.mediawiki.org>
+nick Nick Sullivan <nick@users.mediawiki.org>
+nickj Nick Jenkins <nickj@users.mediawiki.org>
+nikerabbit Niklas Laxström <nikerabbit@users.mediawiki.org>
+nikola Nikola Smolenski <nikola@users.mediawiki.org>
+nimishg Nimish Gautam <nimishg@users.mediawiki.org>
+ning Ning Hu <ning@users.mediawiki.org>
+nojhan Johann Dréo <nojhan@users.mediawiki.org>
+nord Elancev Michael <nord@users.mediawiki.org>
+npassoc Nicholas Pisarro, Jr. <npassoc@users.mediawiki.org>
+nyergler Nathan Yergler <nyergler@users.mediawiki.org>
+oggk oggk <oggk@users.mediawiki.org>
+op_kai Kai Kühn <op_kai@users.mediawiki.org>
+overlordq OverlordQ <overlordq@users.mediawiki.org>
+owen Owen Davis <owen@users.mediawiki.org>
+papyromancer Andrew Davis <papyromancer@users.mediawiki.org>
+pcopp Paul Copperman <pcopp@users.mediawiki.org>
+pdhanda Priyanka Dhanda <pdhanda@users.mediawiki.org>
+peter17 Peter Potrowl <peter17@users.mediawiki.org>
+peterchd Peter Danenberg <peterchd@users.mediawiki.org>
+petrb Petr Bena <petrb@users.mediawiki.org>
+pgehres Peter Gehres <pgehres@users.mediawiki.org>
+philip Philip Tzou <philip@users.mediawiki.org>
+pinky Nathaniel Herman <pinky@users.mediawiki.org>
+platonides Platonides <platonides@users.mediawiki.org>
+preilly Patrick Reilly <preilly@users.mediawiki.org>
+proes Peter-Jan Roes <proes@users.mediawiki.org>
+prolineserver Holger Motzkau <prolineserver@users.mediawiki.org>
+purodha Purodha B Blissenbach <purodha@users.mediawiki.org>
+py Peter Youngmeister <py@users.mediawiki.org>
+questpc Dmitriy Sintsov <questpc@users.mediawiki.org>
+quistnix Anton <quistnix@users.mediawiki.org>
+raindrift Ian Baker <raindrift@users.mediawiki.org>
+rainman Robert Stojnić <rainman@users.mediawiki.org>
+rarohde Robert Rohde <rarohde@users.mediawiki.org>
+raylton.sousa Raylton P. Sousa <raylton.sousa@users.mediawiki.org>
+raymond Raimond Spekking <raymond@users.mediawiki.org>
+reedy Sam Reed <reedy@users.mediawiki.org>
+rememberthedot Remember the dot <rememberthedot@users.mediawiki.org>
+rfaulk Ryan Faulkner <rfaulk@users.mediawiki.org>
+rfong Roger Fong <rfong@users.mediawiki.org>
+rfrisar Raquel Frisar <rfrisar@users.mediawiki.org>
+rikwade Rik Wade <rikwade@users.mediawiki.org>
+river River Tarnell <river@users.mediawiki.org>
+kateturner River Tarnell <kateturner@users.mediawiki.org>
+rmoen Rob Moen <rmoen@users.mediawiki.org>
+robchurch Rob Church <robchurch@users.mediawiki.org>
+roberthl Robert Leverington <roberthl@users.mediawiki.org>
+minuteelectron Robert Leverington <roberthl@users.mediawiki.org>
+robh Rob Halsell <robh@users.mediawiki.org>
+robin Robin Pepermans <robin@users.mediawiki.org>
+robla Rob Lanphier <robla@users.mediawiki.org>
+rodasmith Rod A. Smith <rodasmith@users.mediawiki.org>
+roman Roman Nosov <roman@users.mediawiki.org>
+root Wikimedia Root <noc@wikimedia.org>
+rotem Rotem Liss <rotem@users.mediawiki.org>
+rsterbin Reha Sterbin <rsterbin@users.mediawiki.org>
+ruiz Cezary Kluczyński <ruiz@users.mediawiki.org>
+russblau Russell Blau <russblau@users.mediawiki.org>
+ryo_saeba Nicolas Weeger <ryo_saeba@users.mediawiki.org>
+salvatoreingala Salvatore Ingala <salvatoreingala@users.mediawiki.org>
+samuellampa Samuel Lampa <samuellampa@users.mediawiki.org>
+sanbeg Steve Sanbeg <sanbeg@users.mediawiki.org>
+santhosh Santhosh Thottingal <santhosh@users.mediawiki.org>
+sanyamgoyal Sanyam Goyal <sanyamgoyal@users.mediawiki.org>
+saper Marcin Cieślak <saper@users.mediawiki.org>
+satoda Akihiko Satoda <satoda@users.mediawiki.org>
+sburke Sean Burke <sburke@users.mediawiki.org>
+sean_colombo Sean Colombo <sean_colombo@users.mediawiki.org>
+sergeychernyshev Sergey Chernyshev <sergeychernyshev@users.mediawiki.org>
+shaihulud Camille Constans <shaihulud@users.mediawiki.org>
+shakataganai Jon Davis <shakataganai@users.mediawiki.org>
+shaneking Shane King <shaneking@users.mediawiki.org>
+shimada Masahiko Shimada <shimada@users.mediawiki.org>
+shinjiman Shinjiman <shinjiman@users.mediawiki.org>
+shizhao Shi Zhao <shizhao@users.mediawiki.org>
+shmichael Michael Shynar <shmichael@users.mediawiki.org>
+siebrand Siebrand Mazeland <siebrand@users.mediawiki.org>
+simetrical Aryeh Gregor <simetrical@users.mediawiki.org>
+sj_kissane Simon James Kissane <sj_kissane@users.mediawiki.org>
+skierpage S. Page <skierpage@users.mediawiki.org>
+skizzerz Ryan Schmidt <skizzerz@users.mediawiki.org>
+smoke3723 Smoke 003723 <smoke3723@users.mediawiki.org>
+smurf-wiki T.D. Corell <smurf-wiki@users.mediawiki.org>
+soxred93 X! <soxred93@users.mediawiki.org>
+sql SQL <sql@users.mediawiki.org>
+stipe Stjepan Rajko <stipe@users.mediawiki.org>
+strainu Andrei Cipu <strainu@users.mediawiki.org>
+straussd David Strauss <straussd@users.mediawiki.org>
+sumanah Sumana Harihareswara <sumanah@users.mediawiki.org>
+suuch Paa Kwesi Imbeah <suuch@users.mediawiki.org>
+svemir Svemir Brkic <svemir@users.mediawiki.org>
+svip Svip <svip@users.mediawiki.org>
+swalker Shawn Walker <swalker@users.mediawiki.org>
+swiftlytilting Andrew Fitzgerald <swiftlytilting@users.mediawiki.org>
+tango Thomas Dalton <tango@users.mediawiki.org>
+tarquindarkling Tarquin <tarquindarkling@users.mediawiki.org>
+taw Tomasz Wegrzanowski <taw@users.mediawiki.org>
+tbleher Thomas Bleher <tbleher@users.mediawiki.org>
+than4213 Nathanael Thompson <than4213@users.mediawiki.org>
+thedevilonline Tom Maaswinkel <thedevilonline@users.mediawiki.org>
+thenub314 Nicholas Longo <thenub314@users.mediawiki.org>
+thomasv ThomasV <thomasv@users.mediawiki.org>
+timwi Arne Heizmann <timwi@users.mediawiki.org>
+tisane Nathan Larson <tisane@users.mediawiki.org>
+tkriplean Travis Kriplean <tkriplean@users.mediawiki.org>
+tlaqua Tim Laqua <tlaqua@users.mediawiki.org>
+tomasz Tomasz Finc <tomasz@users.mediawiki.org>
+tomgilder Tom Gilder <tomgilder@users.mediawiki.org>
+tor Lucas Garczewski <tor@users.mediawiki.org>
+tparscal Trevor Parscal <tparscal@users.mediawiki.org>
+travis Travis Derouin <travis@users.mediawiki.org>
+tstarling Tim Starling <tstarling@users.mediawiki.org>
+timstarling Tim Starling <tstarling@users.mediawiki.org>
+urichj00 Jason Richey <urichj00@users.mediawiki.org>
+valhallasw Merlijn van Deen <valhallasw@users.mediawiki.org>
+vasilievvv Victor Vasiliev <vasilievvv@users.mediawiki.org>
+vitalif Vitaliy Filippov <vitalif@users.mediawiki.org>
+vrandezo Denny Vrandecic <vrandezo@users.mediawiki.org>
+vyznev Ilmari Karonen <vyznev@users.mediawiki.org>
+warddr Warddr <warddr@users.mediawiki.org>
+warx Artur Jan Fijałkowski <warx@users.mediawiki.org>
+wegge Anders Wegge Jakobsen <wegge@users.mediawiki.org>
+werdna Andrew Garrett <werdna@users.mediawiki.org>
+whiteknight Andrew Whitworth <whiteknight@users.mediawiki.org>
+whym Yusuke Matsubara <whym@users.mediawiki.org>
+wikibhasha.msr Microsoft Research <wikibhasha.msr@users.mediawiki.org>
+wikinaut Thomas Gries <wikinaut@users.mediawiki.org>
+tgries Thomas Gries <wikinaut@users.mediawiki.org>
+wikipedian Daniel Herding <wikipedian@users.mediawiki.org>
+wmahan Wil Mahan <wmahan@users.mediawiki.org>
+wwalc Wiktor Walc <wwalc@users.mediawiki.org>
+xqt xqt <xqt@users.mediawiki.org>
+yaauie Ryan Bies <yaauie@users.mediawiki.org>
+yaron Yaron Koren <yaron@users.mediawiki.org>
+yurik Yuri Astrakhan <yurik@users.mediawiki.org>
+yurochek Yuri Astrakhan <yurik@users.mediawiki.org>
+yuvipanda Yuvaraj Pandian T <yuvipanda@users.mediawiki.org>
+zak Zak Greant <zak@users.mediawiki.org>
+zexley Zack Exley <zexley@users.mediawiki.org>
+zhengzhu Zheng Zhu <zhengzhu@users.mediawiki.org>
+zhenya Yevhenii Vlasenko <zhenya@users.mediawiki.org>
+zilche Johan Dahlin <zilche@users.mediawiki.org>
+zwinger Wikimedia Bastion <noc@wikimedia.org>
+qchris Christian Aistleitner <qchris@users.mediawiki.org>
+oren Oren Bochman <oren@users.mediawiki.org>
+remco Remco de Boer <remco@users.mediawiki.org>
+cmcmahon Chris McMahon <cmcmahon@users.mediawiki.org>
+khorn Katie Horn <khorn@users.mediawiki.org>
+adamw Adam Wight <adamw@users.mediawiki.org>
+faidon Faidon Liambotis <faidon@users.mediawiki.org>
+abemusic Abe Music <abemusic@users.mediawiki.org>
+binbot Bináris <binbot@users.mediawiki.org>
+drtrigon DrTrigon <drtrigon@users.mediawiki.org>
+legoktm legoktm <legoktm@users.sourceforge.net>
+balasyum balasyum <balasyum@users.sourceforge.net>
+bananeweizen bananeweizen <bananeweizen@users.sourceforge.net>
+borgo borgo <borgo@users.sourceforge.net>
+egon_wiki Egon <egon_wiki@users.sourceforge.net>
+keichwa Karl Eichwalder <keichwa@users.sourceforge.net>
+maxim_razin Maxim Razin <maxim_razin@users.sourceforge.net>
+polyglot Jo Simoens <polyglot@users.sourceforge.net>
+sewilco Scot Wilcoxon <sewilco@users.sourceforge.net>
+tomk32 "Thomas R. Koll" <tomk32@users.sourceforge.net>
+wikiwichtel WikiWichtel <wikiwichtel@users.sourceforge.net>
+
+
+
+
