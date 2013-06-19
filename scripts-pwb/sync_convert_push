@@ -1,0 +1,33 @@
+#!/bin/bash
+date
+
+echo !!! sync new SVN changes &&
+cd "$( dirname "${BASH_SOURCE[0]}" )" &&
+./sync &&
+
+echo !!! clear the output directory, create a new temporary one on /tmp and copy svnroot &&
+echo Using $TMP as temporary directory. &&
+rm -rf output &&
+ln -s $TMP output &&
+cp -r svnroot output/svnroot &&
+
+echo !!! do the actual conversion &&
+LD_LIBRARY_PATH=`pwd`/.. ../svn-all-fast-export --identity-map=authors.alias --rules=total.rules output/svnroot 
+
+echo !!! push repositories to gerrit
+for rep in compat core compat i18n spelling
+do
+    cd output/$rep &&
+    git remote add origin ssh://ConversionGerrit/pywikibot/$rep &&
+    echo !!! FINAL PUSH    
+    git push -f --all origin 
+    cd ../..
+done
+
+echo !!! clean up
+#rm -rf $TMP
+
+date
+
+cp ~/sync_convert_push.* ~/public_html/conversion
+chmod 644 ~/public_html/conversion/*

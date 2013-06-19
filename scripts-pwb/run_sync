@@ -1,0 +1,4 @@
+#!/bin/bash
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+rm ~/sync_convert_push.*
+jsub -once -mem 1G sync_convert_push > /dev/null
