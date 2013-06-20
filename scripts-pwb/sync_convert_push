@@ -12,7 +12,7 @@ ln -s $TMP output &&
 cp -r svnroot output/svnroot &&
 
 echo !!! do the actual conversion &&
-LD_LIBRARY_PATH=`pwd`/.. ../svn-all-fast-export --stats --add-metadata --add-metadata-notes --identity-map=authors.alias --rules=total.rules output/svnroot 
+LD_LIBRARY_PATH=`pwd`/.. ../svn-all-fast-export --stats --add-metadata --identity-map=authors.alias --rules=total.rules output/svnroot 
 
 echo !!! push repositories to gerrit
 for rep in compat core compat i18n spelling
