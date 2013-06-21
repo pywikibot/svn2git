@@ -688,6 +688,36 @@ void Repository::Transaction::commitNote(const QByteArray &noteText, bool append
 
 void Repository::Transaction::commit()
 {
+    static QByteArray last_i18n_SHA1;
+
+    // before committing, hack in submodules
+    if ((repository->name == QString("output/compat")) && (revnum == 8932)) {
+            printf("S");
+            QString contents = QString("[submodule \"i18n\"]\n    path = i18n\n    url = https://gerrit.wikimedia.org/r/p/pywikibot/i18n.git\n");
+            QIODevice *io = addFile(QString(".gitmodules"), 0100644, contents.length());
+            io->write(contents.toUtf8());
+            io->putChar('\n');
+    }
+    if ((repository->name == QString("output/core")) && (revnum == 8833)) {
+            printf("S");
+            QString contents = QString("[submodule \"i18n\"]\n    path = scripts/i18n\n    url = https://gerrit.wikimedia.org/r/p/pywikibot/i18n.git\n");
+            QIODevice *io = addFile(QString(".gitmodules"), 0100644, contents.length());
+            io->write(contents.toUtf8());
+            io->putChar('\n');
+    }
+
+    if ((repository->name == QString("output/compat")) && (revnum >= 8932)) {
+            modifiedFiles.append("M 160000 ");
+            modifiedFiles.append(last_i18n_SHA1);
+            modifiedFiles.append(" i18n\n");
+    }
+
+    if ((repository->name == QString("output/core")) && (revnum >= 8833)) {
+            modifiedFiles.append("M 160000 ");
+            modifiedFiles.append(last_i18n_SHA1);
+            modifiedFiles.append(" scripts/i18n\n");
+    }
+
     repository->startFastImport();
 
     // We might be tempted to use the SVN revision number as the fast-import commit mark.
@@ -775,6 +805,15 @@ void Repository::Transaction::commit()
 
     // write the file modifications
     repository->fastImport.write(modifiedFiles);
+    
+    QProcess logtail;
+    if (repository->name == QString("output/i18n")) {
+        logtail.setReadChannel(QProcess::StandardOutput);
+        logtail.start("tail", QStringList() << "-n" << "0" << "-f" << logFileName(repository->name));
+        logtail.waitForStarted(-1);
+        repository->fastImport.write("\ncheckpoint\n");
+
+    }
 
     repository->fastImport.write("\nprogress SVN r" + QByteArray::number(revnum)
                                  + " branch " + branch + " = :" + QByteArray::number(mark)
@@ -791,4 +830,29 @@ void Repository::Transaction::commit()
     while (repository->fastImport.bytesToWrite())
         if (!repository->fastImport.waitForBytesWritten(-1))
             qFatal("Failed to write to process: %s for repository %s", qPrintable(repository->fastImport.errorString()), qPrintable(repository->name));
+
+    if (repository->name == QString("output/i18n")) {
+        printf("\n -- Waiting for mark :%i -- ", mark);
+        while(1) {
+            if (logtail.waitForReadyRead(1000)) {
+                QByteArray line = logtail.readLine();
+                printf("\n>%s<", line.data());
+                if (line.startsWith("progress")) break;
+            } else {
+                repository->fastImport.write("\nprogress (flush attempt)\n");
+            }
+        }
+        logtail.kill();
+        logtail.waitForFinished(-1);
+
+        QProcess gitlog;
+        gitlog.setWorkingDirectory(repository->name);
+        gitlog.setReadChannel(QProcess::StandardOutput);
+        gitlog.start("git", QStringList() << "show-ref" << "-s" << "master");
+        gitlog.waitForFinished(-1);
+        last_i18n_SHA1 = gitlog.readLine().trimmed();
+        repository->fastImport.write("progress <" + QByteArray::number(gitlog.exitStatus()) + ": " + last_i18n_SHA1 + ">\n");
+    }
+
+
 }
