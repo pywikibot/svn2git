@@ -839,7 +839,7 @@ void Repository::Transaction::commit()
                 printf("\n>%s<", line.data());
                 if (line.startsWith("progress")) break;
             } else {
-                repository->fastImport.write("\nprogress (flush attempt)\n");
+                repository->fastImport.write("progress (flush attempt)\n");
             }
         }
         logtail.kill();
