@@ -23,6 +23,7 @@
 #include <QDir>
 #include <QFile>
 #include <QLinkedList>
+#include <QHash>
 
 static const int maxSimultaneousProcesses = 100;
 
@@ -61,10 +62,13 @@ static QString marksFileName(QString name)
     return name;
 }
 
+QHash<QString, Repository*> repositories;
+
 Repository::Repository(const Rules::Repository &rule)
     : name(rule.name), prefix(rule.forwardTo), fastImport(name), commitCount(0), outstandingTransactions(0),
       last_commit_mark(0), next_file_mark(maxMark), processHasStarted(false)
 {
+    repositories[name] = this;
     foreach (Rules::Repository::Branch branchRule, rule.branches) {
         Branch branch;
         branch.created = 0;     // not created
@@ -249,6 +253,7 @@ void Repository::restoreLog()
 
 Repository::~Repository()
 {
+    repositories.remove(name);
     Q_ASSERT(outstandingTransactions == 0);
     closeFastImport();
 }
@@ -688,8 +693,6 @@ void Repository::Transaction::commitNote(const QByteArray &noteText, bool append
 
 void Repository::Transaction::commit()
 {
-    static QByteArray last_i18n_SHA1;
-
     // before committing, hack in submodules
     if ((repository->name == QString("output/compat")) && (revnum == 8932)) {
             printf("S");
@@ -704,18 +707,6 @@ void Repository::Transaction::commit()
             QIODevice *io = addFile(QString(".gitmodules"), 0100644, contents.length());
             io->write(contents.toUtf8());
             io->putChar('\n');
-    }
-
-    if ((repository->name == QString("output/compat")) && (revnum >= 8932)) {
-            modifiedFiles.append("M 160000 ");
-            modifiedFiles.append(last_i18n_SHA1);
-            modifiedFiles.append(" i18n\n");
-    }
-
-    if ((repository->name == QString("output/core")) && (revnum >= 8833)) {
-            modifiedFiles.append("M 160000 ");
-            modifiedFiles.append(last_i18n_SHA1);
-            modifiedFiles.append(" scripts/i18n\n");
     }
 
     repository->startFastImport();
@@ -839,7 +830,9 @@ void Repository::Transaction::commit()
                 printf("\n>%s<", line.data());
                 if (line.startsWith("progress")) break;
             } else {
+                printf("...\n");
                 repository->fastImport.write("progress (flush attempt)\n");
+                repository->fastImport.waitForBytesWritten(-1);
             }
         }
         logtail.kill();
@@ -850,8 +843,34 @@ void Repository::Transaction::commit()
         gitlog.setReadChannel(QProcess::StandardOutput);
         gitlog.start("git", QStringList() << "show-ref" << "-s" << "master");
         gitlog.waitForFinished(-1);
-        last_i18n_SHA1 = gitlog.readLine().trimmed();
+        QByteArray last_i18n_SHA1 = gitlog.readLine().trimmed();
         repository->fastImport.write("progress <" + QByteArray::number(gitlog.exitStatus()) + ": " + last_i18n_SHA1 + ">\n");
+
+        if (revnum >= 8932) {
+            Repository *otherrepos = repositories[QString("output/compat")];
+            Transaction *txn = otherrepos->newTransaction(QString("master"), QString(""), revnum);
+            txn->setAuthor(author);
+            txn->setDateTime(datetime);
+            txn->setLog(log + "\n\n(automatic submodule update by svn2git)");
+            txn->modifiedFiles.append("M 160000 ");
+            txn->modifiedFiles.append(last_i18n_SHA1);
+            txn->modifiedFiles.append(" scripts/i18n\n");
+            txn->commit();
+            delete txn;
+        }
+        if (revnum >= 8833) {
+            Repository *otherrepos = repositories[QString("output/core")];
+            Transaction *txn = otherrepos->newTransaction(QString("master"), QString(""), revnum);
+            txn->setAuthor(author);
+            txn->setDateTime(datetime);
+            txn->setLog(log + "\n\n(automatic submodule update by svn2git)");
+            txn->modifiedFiles.append("M 160000 ");
+            txn->modifiedFiles.append(last_i18n_SHA1);
+            txn->modifiedFiles.append(" scripts/i18n\n");
+            txn->commit();
+            delete txn;
+        } //8833
+
     }
 
 
