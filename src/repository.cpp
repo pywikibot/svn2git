@@ -854,7 +854,7 @@ void Repository::Transaction::commit()
             txn->setLog(log + "\n\n(automatic submodule update by svn2git)");
             txn->modifiedFiles.append("M 160000 ");
             txn->modifiedFiles.append(last_i18n_SHA1);
-            txn->modifiedFiles.append(" scripts/i18n\n");
+            txn->modifiedFiles.append(" i18n\n");
             txn->commit();
             delete txn;
         }
